@@ -1,0 +1,94 @@
+<p>kely the first thing that baby rustaceans will bang their heads on is the concept of lifetimes and the borrow checker. One of the things I took for granted in virtually every other programming language that I used was the ability to call methods off of an object without too much fuss. Calling methods needs to be handled drastically differently in rust-lang.</p>
+<p>In the listing below I&#39;m trying to model a simple type representing a node in a simple neural network:</p>
+<ul>
+<li>An instance of a Neuron will contain a 32 bit integer for the number of inputs it takes <em>num_inputs</em></li>
+<li>It will also contain a vector of weights (as 64-bit floating points) that dictate the value of those inputs <em>weights</em></li>
+</ul>
+<p>The corresponding struct probably looks something like this:</p>
+<pre><code>struct Neuron {
+  num_inputs: i32,
+  weights: Vec&lt;f64&gt;
+}
+</code></pre><p>We&#39;ll also want to create the rust analogue to a static method <em>(Neuron::new)</em> which serves as a constructor by randomly generating a total of <em>ninputs</em> floating points to populate a Neuron struct accordingly. <em>Note that in the listing we&#39;re actually creating ninputs+1</em></p>
+<pre><code>impl Neuron {
+  fn new (ninputs: i32) -&gt; Neuron {
+    let mut weight_vec = Vec::new();
+    // add {ninputs+1} weights...
+    for _ in 0..(ninputs+1) {
+      weight_vec.push(rand::random::&lt;f64&gt;());
+    }
+    Neuron{num_inputs: ninputs, weights: weight_vec}
+  }
+}
+</code></pre><p>Now let&#39;s say we want to do some quality logging at some point and we would like to print out each of the weights in a neuron&#39;s vector. For convenience let&#39;s make it a method! Hmm yeah...! let&#39;s add it to <code>impl Neuron</code> shall we?</p>
+<pre><code>impl Neuron {
+
+      /* ... blah blah... fn new still looks the same */
+
+          fn print_weights (self) {
+                    for weight in self.weights {
+                                  println!(&quot;{}&quot;, weight);
+                                          }
+                                              }
+}
+</code></pre><p>Now we can instantiate an instance, and then print the weights like so:</p>
+<pre><code>fn main() {
+      let a_neuron = Neuron::new(2);
+          a_neuron.print_weights();
+}
+</code></pre><p>With any luck we&#39;d probably see something like this:</p>
+<pre><code>0.7330616595228169
+0.6183962989161881
+0.79081893581957
+</code></pre><p>But what if we wanted to print it again?</p>
+<pre><code>let a_neuron = Neuron::new(2);
+a_neuron.print_weights();
+a_neuron.print_weights();
+</code></pre><p>This is where everything falls apart and you start to turn to StackOverflow (by way of google of course). You&#39;ll most likely see a compiler error along the lines of:</p>
+<pre><code>use of moved value `a_neuron`
+</code></pre><p>So what&#39;s going on here? If we take a look at the signature for <code>Neuron::print_weights</code>:</p>
+<pre><code>fn print_weights (self)
+</code></pre><p>It turns out that because of the<code>self</code> parameter, when the method is called  <code>a_neuron.print_weights</code> implicitly takes ownership of <code>self</code> (these are move semantics). When <code>a_neuron.print_weights</code> is called the second time, ownership is never yielded back to the main function (or whatever function we calling it from).</p>
+<p>In order to make this work, we need to <strong>declare print_weights as a borrow, as well as the access to self.weights</strong>:</p>
+<pre><code>fn print_weights (&amp;self) {
+  for weight in &amp;self.weights {
+    println!(&quot;{}&quot;, weight);
+  }
+ }
+</code></pre><p>Our full listing ends up looking something like this:</p>
+<pre><code>extern crate rand;
+
+struct Neuron {
+  num_inputs: i32,
+  weights: Vec&lt;f64&gt;
+}
+
+impl Neuron {
+  fn new (ninputs: i32) -&gt; Neuron {
+    let mut weight_vec = Vec::new();
+    //add {ninputs + 1} weights
+    for _ in 0..(ninputs+1) {
+      weight_vec.push(rand::random::&lt;f64&gt;());
+    }
+    Neuron{num_inputs: ninputs, weights: weight_vec}
+  }
+
+  fn print_weights (&amp;self) {
+    for weight in &amp;self.weights {
+      println!(&quot;{}&quot;, weight);
+    }
+  }
+}
+
+fn main() {
+  let a_neuron = Neuron::new(2);
+  a_neuron.print_weights();
+}
+</code></pre><p>And hopefully we see output along the lines of:</p>
+<pre><code>0.45597887767522716
+0.6523807976419703
+0.43939320025023854
+0.1353881594997136
+0.45597887767522716
+0.6523807976419703
+</code></pre><p>Please note that I do not claim to know everything and all there is to know about Rust! If I got anything wrong and if there is anything that I should mention, please be sure to let me know!</p>

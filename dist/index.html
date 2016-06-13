@@ -1,0 +1,96 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/style/style.css">
+  </head>
+  <body>
+    <header class="main-header no-cover">
+      <div class="vertical">
+          <div class="main-header-content inner">
+              <h1 class="page-title">import theworldj._</h1>
+              <h2 class="page-description">no results found</h2>
+          </div>
+      </div>
+      <a class="scroll-down icon-arrow-left" href="index.html#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
+    </header>
+    <content class="content" id="content"></content>
+    <script src="https://fb.me/react-15.1.0.min.js"></script>
+    <script src="https://fb.me/react-dom-15.1.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+    <script type="text/babel">
+      var PostPreview = function (title, previewText, author, datePublished) {
+        this.title = title;
+        this.previewText = previewText;
+        this.author = author;
+        this.datePublished = datePublished
+      };
+      PostPreview.from = function (title, previewText, author, datePublished) {
+        return new PostPreview(title, previewText, author, datePublished);
+      };
+      var posts = [
+        PostPreview.from(
+          "@tailrec",
+          "Next week I am returning to industry. It's been just under eight months since I've pulled in a steady paycheck and I'm just about ready to",
+          "Andy Liang",
+          "04 April 2016"),
+        PostPreview.from(
+          "Metaprogramming In Rust",
+          "Background I've been hanging out at the Recurse Center over the last seven weeks. People come to RC for lots of different reasons, from different backgrounds.",
+          "Andy Liang",
+          "13 November 2015"),
+        PostPreview.from(
+          "Falling Back to Earth",
+          "A follow-up It's been an incredible journey over the last month. Somewhere over either Vietnam or the South China Sea I was ambushed with the irony",
+          "Andy Liang",
+          "25 September 2015"
+        ),
+        PostPreview.from(
+          "The Only Risk Is That You Go Insane",
+          "I landed in this country 6 days ago. I've traversed nearly 1,000 kilometers in that span via taxi, pickup truck, ferry, train, subway, mini-van, motorbike,",
+          "Andy Liang",
+          "06 September 2015"
+        ),
+        PostPreview.from(
+          "borrow checker battles in rust",
+          "Likely the first thing that baby rustaceans will bang their heads on is the concept of lifetimes and the borrow checker. One of the things I",
+          "Andy Liang",
+          "24 July 2015"
+        )
+      ];
+
+    //this isnt really following react best practices. hastily written
+    var Previews = React.createClass({displayName: 'Preview',
+      render: function() {
+        var postPreviews = posts.map(post => {
+          return (<article className="post">
+            <header className="post-header">
+              <h2 className="post-title">{post.title}</h2>
+            </header>
+            <section className="post-excerpt">
+              <p>{post.previewText} >> </p>
+            </section>
+            <footer className="post-meta">
+              <a>{post.author}</a>
+              <time class="post-date">    {post.datePublished}</time>
+            </footer>
+          </article>
+        )});
+
+        return (
+          <div>{postPreviews}</div>
+        )
+      }
+    });
+
+    var Post = React.createClass({displayName: 'Post',
+      render: function () {
+        
+      }
+    })
+
+      ReactDOM.render(
+        <Previews />,
+        document.getElementById('content')
+      );
+    </script>
+  </body>
+</html>
