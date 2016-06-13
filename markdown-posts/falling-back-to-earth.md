@@ -1,7 +1,7 @@
 
 ###### [A follow-up](http://blog.theworldj.tk/the-only-risk-is-that-you-go-insane/)
 
-It's been an incredible journey over the last month. Somewhere over either Vietnam or the South China Sea I was ambushed with the irony of flying halfway around the world just to move again a few days later. I couldn't, and still can't believe that this is finally happening. This is something that I couldn't do until now.
+It's been an incredible journey over the last month. Somewhere over either Vietnam or the South China Sea I realized the irony of flying home from the other side of the planet in order to relocate again a few days later. I couldn't and still can't believe that this is finally happening. I've never truly live outside of New England.
 
 The sweltering heat is only one of the things you leave behind when traveling roughly 14,000 kilometers from Bangkok to Boston. After a couple days you learn to appreciate any air-conditioned havens you discover. Gone too is the maddening traffic, inhale-able pollution, and 3AM roadside $1 noodles with intense (and loud) philosophical debates sprinkled in (seriously though, why isn't this a thing in the states?)
 
@@ -11,7 +11,7 @@ The sweltering heat is only one of the things you leave behind when traveling ro
 ![](/content/images/2015/09/DSC_0543.jpg)
 <sub> > some R&R in the middle of a rice paddy
 
-My eyes were a little on the watery side that morning, I had to catch a 4AM taxi after all. I tried fitting a lot into the 3.5 weeks I was on the road, since I had left the conventional 9-5. I have no regrets about getting this show on the road and seeing where it leads in the coming months. I've learned over the last few years that it takes a much longer time for me to open up to people, even people that I've known for many moons. This will always be something that I need to work on and is one of the things that I've tried to break free of while traveling far away from home.
+My bleary eyes were a little on the watery side that morning, I had to catch a 4AM taxi after all. I tried fitting a lot into the 3.5 weeks I was on the road, since I had left the conventional 9-5. I have no regrets about getting this show on the road and seeing where it leads in the coming months. I've learned over the last few years that it takes a much longer time for me to open up to people, even people that I've known for many moons. This will always be something that I need to work on and is one of the things that I've tried to break free of while traveling far away from home.
 
 ![](/content/images/2015/09/DSC_0974.jpg)
 <sub> > Bangkok on a *clear* day
@@ -21,14 +21,14 @@ I've met so many people and new friends whether it be other weary travelers, loc
 ![](/content/images/2015/09/DSC_0534.jpg)
 <sub> > Ing Doi / the Yawning Fields just outside of Pai. Ask Mink (the owner) for the red curry for *every* meal. Get used to geckos though.
 
-Not too long, one of my good friends from college introduced me to the personality types. It's been something that has mystified (and haunted) me over the last year especially how eerily accurate it can be sometimes. One guy I met on a bus to a ferry to get down to Koh Pha Ngan was particularly interested in the human psyche and was convinced that I was inherently extroverted based on the fact that we were talking the entire extent of the bus ride. I won't reveal what I've tested as because I don't believe that the four letters you get back envelops you as a person, it's important to remember that you can decide who you are as a person. I'll admit that I've been afraid of falling, of failure and rejection and I've tried to protect myself for too long now. But that's ok, everyone moves at their own pace. And everything is going to end up just fine.
+One guy I met on a bus to a ferry to get down to Koh Pha Ngan was particularly interested in the human psyche and was convinced that I was inherently extroverted based on the fact that we were talking the entire extent of the bus ride. Satisfying human experiences seem to only come around when we have nothing to lose. That's ok, everyone moves at their own pace. And everything is going to end up just fine.
 
 The decision to flee Boston was borderline desperate as a grandiose and maybe even gonzo plan of stepping into the nether. I still don't know how the next few months will end up turning out but if there's only one takeaway that I'll bring back to the states it's that I'll figure out a way to survive. I'm not worried about what comes next, but I sure am looking forward to it.
 
 ![](/content/images/2015/09/DSC_0616.jpg)
 <sub> > Chalok Lam, northernmost fishing village on Koh Pha Ngan. I hiked up here 3.5 miles with my 40L along the shore and through rolling hills in the hopes that a taxi boat would take me to a secluded beach unreachable by conventional road vehicles. The taxis only leave if the boats full - otherwise they rip you off for 200baht (it's the principle that gets to me, not the dollar amount) had to hike back down. The sand here was the best I found on the island though.
 
-Getting to some of the remote parts of the region, off the beaten path, was one of the (many) highlights. Bangkok's a great city - one of my absolute favorites out of all of the ones I've passed through in my years of traveling. There's a reason why it's a cosmopolitan gem. It's one of those cities that you namedrop anywhere in the world, and people know about it; this is akin to first name athletes like Lebron, Peyton, Pedro, Roger, etc. you don't even need to name the last name, you just know. Once you get off the beaten path, you don't feel obliged to stick to the traditional guidebooks because there's so many more periods of not knowing. There's also a lot less expectations and more freedom to pace yourself to say the least.
+Getting to some of the remote parts of the region, off the beaten path, was one of the (many) highlights. Bangkok's a great city - one of my absolute favorites out of all of the ones I've passed through in my years of traveling. There's a reason why it's a cosmopolitan gem. It's one of those cities that you namedrop anywhere in the world, and people know about it; this is akin to first name athletes like Lebron, Peyton, and Roger. Once you get off the beaten path, you don't feel obliged to stick to the traditional guidebooks because there's so many more periods of not knowing. There's also a lot less expectations and more freedom to pace yourself to say the least.
 
 ![](/content/images/2015/09/DSC_0389.jpg)
 <sub> > I found myself standing in the middle of an alpaca farm / botanical garden in Mae Hong Son province when I was looking for the Thai-Burmese border. (you sort of head north until the road stops being road and yeah, I know they're just sheep - alpaca sounds more exotic)
@@ -49,7 +49,7 @@ Added on top, the infrastructure there can't keep up with the number of tourists
 ![](/content/images/2015/09/DSC_0941.jpg)
 <sub> > Get ready for touts. Just smile and shake your head.
 
-Despite how pestering they can be, interacting with smiling Khmer are a real treat. After a rainstorm almost seems like small Khmer children will spawn out of the walls of popular temples to swarm and try to sell you cheap plastic raincoats. Now, I've never had dreams of fighting packs of midgets, but I suppose if you have that fantasy this would be the place to go (not that I condone violence to kids/anyone). If you can look a little further than the school-age girls in the covered markets *begging* you to buy magnets and t-shirt in addition to the tuk-tuk lined streets where every driver asks "hey where you going?" or "you want tuk-tuk?", and trust me it gets tired and annoying fast, people can still be beautiful.
+After a rainstorm almost seems like small Khmer children will spawn out of the walls of popular temples to swarm and try to sell you cheap plastic raincoats. Now, I've never had dreams of fighting packs of midgets, but I suppose if you have that fantasy this would be the place to go (not that I condone violence to kids/anyone). If you can look a little further than the school-age girls in the covered markets *begging* you to buy magnets and t-shirt in addition to the tuk-tuk lined streets where every driver asks "hey where you going?" or "you want tuk-tuk?". There's something about Cambodia though.
 
 ![](/content/images/2015/09/DSC_0840.jpg)
 <sub> > Just waiting for afternoon storm clouds to roll in @ Angkor Wat
