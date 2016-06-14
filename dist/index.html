@@ -10,7 +10,7 @@
     <header class="main-header no-cover">
       <div class="vertical">
           <div class="main-header-content inner">
-              <h1 class="page-title">import theworldj._</h1>
+              <h1 class="page-title"><a class="page-title-link" href="/">import theworldj._</a></h1>
               <h2 class="page-description">no results found</h2>
           </div>
       </div>
@@ -40,7 +40,7 @@
           "Background I've been hanging out at the Recurse Center over the last seven weeks. People come to RC for lots of different reasons, from different backgrounds.",
           "Andy Liang",
           "13 November 2015",
-          "borrow-checker-battles-in-rust.html"),
+          "metaprogramming-in-rust.html"),
         PostPreview.from(
           "Falling Back to Earth",
           "A follow-up It's been an incredible journey over the last month. Somewhere over either Vietnam or the South China Sea I was ambushed with the irony",
@@ -53,14 +53,15 @@
           "I landed in this country 6 days ago. I've traversed nearly 1,000 kilometers in that span via taxi, pickup truck, ferry, train, subway, mini-van, motorbike,",
           "Andy Liang",
           "06 September 2015",
-          "metaprogramming-in-rust.html"
+          "the-only-risk-is-that-you-go-insane.html"
         ),
         PostPreview.from(
           "borrow checker battles in rust",
           "Likely the first thing that baby rustaceans will bang their heads on is the concept of lifetimes and the borrow checker. One of the things I",
           "Andy Liang",
           "24 July 2015",
-          "the-only-risk-is-that-you-go-insane.html"
+          "borrow-checker-battles-in-rust.html"
+
         )
       ];
       var gotoSource = function () {
@@ -114,7 +115,11 @@
         },
         render: function () {
           return (
-            <div dangerouslySetInnerHTML={{__html: this.state.html}}></div>
+            <div className="content">
+              <article className="post">
+                <section className="post-content" dangerouslySetInnerHTML={{__html: this.state.html}}></section>
+              </article>
+            </div>
           )
         }
       })
